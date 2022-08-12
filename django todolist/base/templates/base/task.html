@@ -1,0 +1,10 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+<p><a class="pop" href="{% url 'tasks' %}">🔙</a></p>
+<div class="detail">
+    <h1>{{task |safe}}</h1>
+    <p>{{task.description |safe}}</p>
+</div>
+<a class="button-class" href="{% url 'task-update' task.id %}">Edit task</a></p>
+{% endblock %}

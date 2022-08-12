@@ -1,0 +1,157 @@
+a{
+	text-decoration: none;
+	color: #0074ba;
+}
+a:hover{
+	transition: all 100ms ease-in-out;
+	color: rgb(247, 132, 132);
+}
+input[type=text], input[type=password], textarea {
+	border: 2px solid rgb(247, 132, 132);
+	border-radius: 7px;
+	font-size: 1rem;
+	width: 97%;
+	margin: 5px 0;
+	padding: 5px;
+	color: #555;
+	display: flex;
+	justify-content: center;
+}
+
+input[type=checkbox]{
+	border: 2px solid rgb(247, 132, 132);
+}
+
+/* -------------------------------------------- */
+body{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(255 184 184);
+}
+.content {
+	width: 500px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 80px;
+	box-shadow: 1px 5px 14px #b1a8a8;
+}
+
+header{
+	display: flex;
+	align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+	padding: 1rem;
+	background-color: rgb(247, 132, 132);
+}
+
+header > .profile{
+	display: flex;
+	align-items: center;
+	color: #444;
+}
+header > .profile > .profile-image{
+	margin-right: 20px;
+	border-radius: 50%;
+    width: 4rem;
+    border: 3px solid white;
+}
+
+header > .profile > .profile-name > h2 {
+	margin: 3px 0 3px; 
+}
+header a{
+	border-radius: 5px;
+    background-color: rgb(250, 175, 175);
+    padding: 2px 5px 2px 5px;
+	color: #444;
+}
+
+main{
+	padding: 1rem;
+	background-color: rgb(250, 229, 229);
+}
+.search{
+	display: flex;
+	justify-content: center;
+}
+.search > input{
+	background-color: rgb(255 207 207);
+	border-style: none;
+	padding: 0.5rem;
+}
+.search > input[type=search] {
+	font-size: 1rem;
+	color: #727272;
+	border-radius: 20px 0 0 20px;
+	background-color: rgb(255 207 207);
+	border-style: none;
+	padding: 0.5rem;
+}
+
+.search > input[type=submit]{
+	/* color: #0074ba; */
+	font-size: large;
+	border-radius: 0px 20px 20px 0px;
+}
+
+main > .task-list{
+	padding: 0 2rem;
+}
+main > .task-list > .task-item{
+	display: flex;
+    align-items: center;
+    margin: 10px 0;
+	padding: 0 10px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+main > .task-list > .task-item > .task-menu{
+	margin-left: auto;
+	/* margin-right: 10rem; */
+}
+
+/* ========================================================== */
+.underlined:hover{
+	margin-bottom: 5px;
+	border-bottom: solid 5px rgb(247, 132, 132);
+}
+
+.pop:hover{
+    transition: all 100ms ease-in-out;
+    font-size: 120%;
+}
+
+.button-class{
+	border-style: none;
+	background-color: rgb(247, 132, 132);
+	color: #fff;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 10px;
+	cursor: pointer;
+	/* text-decoration: none; */
+}
+.button-class:hover{
+	background-color: rgb(255, 197, 197);
+}
+
+/* --------------------------------------------- */
+.detail{
+	min-height: 250px;
+	background-color:rgb(253, 253, 253);
+	margin: 20px 0;
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+.detail > h1{
+	color: rgb(247, 132, 132);
+}
+.detail > p{
+	color:rgb(126, 83, 83);
+}
+
+/* ............................................... */
+.django-ckeditor-widget{
+	display: contents;
+}

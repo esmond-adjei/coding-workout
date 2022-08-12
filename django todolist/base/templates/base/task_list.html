@@ -1,0 +1,35 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+<!-- <h1>{{request.user |upper}}'S LIST VIEW</h1> -->
+
+<form class="search" method="GET">
+    <input type="search" name="search-area" value="{{search_input}}" placeholder="Search task">
+    <input type="submit" value="🔍">
+</form>
+
+<div class="task-list">
+<br>
+<a class="underlined" href="{% url 'task-create' %}">➕ New Task</a>
+<br>
+<br>
+{% for task in tasks %}
+<div class="task-item">
+    <p> {% if task.complete %} 
+        ✔️<s> <!--  the 's' tag will strike through if this condition is true -->
+    {% else %}
+        ⭕
+    {% endif %}
+        <a href="{% url 'task' task.id %}">{{task.title |safe}}</a></s>
+        <div class="task-menu">
+            <a class = "pop" href="{% url 'task-update' task.id %}">📝</a>
+            <a class = "pop" href="{% url 'task-delete' task.id %}"> 🗑️</a>
+        </div>
+    </p>
+
+</div>
+{% empty %}
+    <h3>There are no items here !!!</h3>
+{% endfor %}
+</div>
+{% endblock %}

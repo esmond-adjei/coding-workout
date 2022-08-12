@@ -1,0 +1,15 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+<h1>Task Form</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.media}}
+    {{form.as_p}}
+    <input class="button-class" type="submit" value="Save">
+    <button class="button-class">
+        <a style="color: white;" href="{% url 'tasks' %}">Cancel</a>
+    </button>
+</form>
+{% endblock %}
